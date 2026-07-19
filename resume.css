@@ -1,0 +1,378 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#eef3f8;
+    color:#2d3748;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(12px);
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.navbar{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    color:#2563eb;
+    font-size:30px;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:35px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#334155;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#2563eb;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding-top:120px;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:28px;
+    color:#64748b;
+}
+
+.hero-text h2{
+    font-size:55px;
+    margin:15px 0;
+    color:#2563eb;
+}
+
+.hero-text p{
+    line-height:1.8;
+    margin-bottom:30px;
+    color:#475569;
+}
+
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 35px;
+    border-radius:50px;
+    transition:.3s;
+    box-shadow:0 8px 18px rgba(37,99,235,.25);
+}
+
+.btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-5px);
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.hero-image{
+    width:40%;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.hero-image img{
+    width: 350px;
+    height:400px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+    transition:.4s;
+}
+
+.hero-image img:hover{
+    transform:scale(1.08) rotate(2deg);
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+.section{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:90px 0;
+}
+
+.section h2{
+    text-align:center;
+    color:#2563eb;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about-container{
+    display:flex;
+    justify-content:center;
+}
+
+.about-text{
+    max-width:800px;
+    text-align:center;
+    line-height:1.9;
+    color:#475569;
+    font-size:18px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.card,
+.project-card{
+
+    width:260px;
+    background:#ffffff;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    transition:.4s;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.card:hover,
+.project-card:hover{
+
+    transform:translateY(-12px);
+    box-shadow:0 18px 35px rgba(37,99,235,.18);
+
+}
+
+.card i{
+
+    font-size:60px;
+    color:#2563eb;
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    color:#334155;
+
+}
+
+.project-card h3{
+
+    margin-bottom:15px;
+    color:#2563eb;
+
+}
+
+.project-card p{
+
+    color:#64748b;
+    line-height:1.7;
+
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact-box{
+
+    background:white;
+    max-width:600px;
+    margin:auto;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.contact-box p{
+
+    margin:20px 0;
+    font-size:18px;
+
+}
+
+.contact-box i{
+
+    color:#2563eb;
+    margin-right:10px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    text-align:center;
+    padding:25px;
+    background:#2563eb;
+    color:white;
+    margin-top:40px;
+
+}
+
+/* ===========================
+   HOVER GLOW
+=========================== */
+
+.card:hover i{
+
+    transform:rotate(12deg) scale(1.2);
+    transition:.3s;
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#dbeafe;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.hero{
+
+    flex-direction:column-reverse;
+    text-align:center;
+    padding-top:140px;
+
+}
+
+.hero-text{
+
+    width:100%;
+    margin-top:40px;
+
+}
+
+.hero-image{
+
+    width:100%;
+    justify-content:center;
+
+}
+
+.hero-text h2{
+
+    font-size:42px;
+
+}
+
+.navbar{
+
+    flex-direction:column;
+
+}
+
+.nav-links{
+
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+.nav-links li{
+
+    margin:10px;
+
+}
+
+.section h2{
+
+    font-size:34px;
+
+}
+
+}
