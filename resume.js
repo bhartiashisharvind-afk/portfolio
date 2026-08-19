@@ -139,7 +139,7 @@ birthdayWishesDiv.addEventListener("click", function () {
 const whatsappButton = document.getElementById("whatsapp");
 
 whatsappButton.addEventListener("click", function () {
-  window.open("https://wa.me/91842172833/?text=Hello,Ashish", "_blank");
+  window.open("https://wa.me/918421728033/?text=Hello,Ashish", "_blank");
 });
 
 const weatherButton = document.getElementById("weather-app");
